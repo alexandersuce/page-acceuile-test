@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Mauvais Ordre" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+    <title>Mauvais Ordre / Magasine Rap actu et blog</title>
+     <header>
+        <a href="">Accueil</a>
+        <a href="">actu</a>
+        <a href="" class="login">S'inscrire</a>
+     </header>
+</head>
+<body>
+     <img src="Logomauvaisordre.png" class="logo">
+     <button>Découvrir</button>
+     <script>document.addEventListener('mousemove', function(e) {
+        const circle = document.createElement('div');
+        circle.className = 'circle';
+        document.body.appendChild(circle);
+        
+        const size = Math.random() * 50 + 10; // Random size for the circles
+        circle.style.width = `${size}px`;
+        circle.style.height = `${size}px`;
+        circle.style.left = `${e.pageX - size / 2}px`;
+        circle.style.top = `${e.pageY - size / 2}px`;
+        
+        circle.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`; // Random color
+    
+        setTimeout(() => {
+            circle.style.transform = 'scale(0)';
+            circle.style.opacity = '0';
+        }, 100);
+    
+        setTimeout(() => {
+            circle.remove();
+        }, 300);
+    });
+    </script>
+</body>
+</html>
