@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    cursor: none; /* Hide the cursor for a better effect */
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    pointer-events: none;
+    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+}
+
+ header {
+    text-align: center;
+ }
+
+  a {
+    position: relative;
+    color: aliceblue;
+    margin: 20px;
+    text-decoration: none;
+    font-family: fantasy;
+    font-size: 20px;
+    top: 10px;
+  }
+
+  a:hover {
+   color: blueviolet;
+  }
+
+  .logo {
+    position: relative;
+    top: 100px;
+    margin-right: 10px;
+    width: 750px;
+    height: auto;
+  }
+
+  button {
+    background-color: aliceblue;
+    color: black;
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+    font-family: fantasy;
+    font-size: 25px;
+    width: 200px;
+    transition: all 1s; 
+}
+
+button:hover {
+    border: 1px solid aliceblue; 
+    background-color: black;
+    color: aliceblue;
+}

@@ -1,0 +1,88 @@
+/* Style général du corps */
+body {
+    background-color: black;
+    color: aliceblue;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: Arial, sans-serif;
+}
+
+/* Style du header */
+header {
+    display: flex;
+    justify-content: space-between; /* Aligne les éléments aux extrémités */
+    align-items: center; /* Aligne les éléments verticalement */
+    padding: 10px 20px;
+    border-radius: 18px;
+    background: #000000;
+}
+
+.logo {
+    height: 50px;
+}
+
+/* Style des liens dans le header */
+header a {
+    color: aliceblue;
+    margin: 0 10px; /* Ajuste les marges à gauche et à droite */
+    text-decoration: none;
+    font-family: fantasy;
+    font-size: 20px;
+    text-align: center; /* Centre le texte à l'intérieur du lien */
+}
+
+/* Effet au survol des liens */
+header a:hover {
+    color: blueviolet;
+}
+
+/* Styles pour le titre */
+h1 {
+    color: aliceblue;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; /* Centrer le titre */
+    margin-bottom: 40px; /* Espacement sous le titre */
+}
+
+/* Styles pour le conteneur principal */
+.top {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 80px;
+}
+
+/* Styles pour chaque élément .top */
+.top > .top {
+    position: relative; /* Pour positionner le titre à l'intérieur */
+    background-image: url('https://www.radiofrance.fr/s3/cruiser-production-eu3/2024/02/171dd098-523d-418a-9b2f-d94ad5c5092d/200x200_sc_webradios-100mix-240212.webp');
+    background-size: cover; /* Couvre toute la zone de l'élément */
+    background-position: center; /* Centre l'image de fond */
+    height: 200px; /* Hauteur des éléments */
+    display: flex; /* Pour centrer le texte à l'intérieur */
+    align-items: center;
+    justify-content: center;
+    color: white; /* Couleur du texte */
+    font-family: Arial, sans-serif;
+    text-align: center; /* Centrer le texte à l'intérieur */
+}
+
+/* Styles pour le titre de chaque image */
+.top > .top::before {
+    content: attr(data-title); /* Utilise l'attribut data-title pour le titre */
+    position: absolute; /* Positionne le texte par rapport au conteneur */
+    bottom: 10px; /* Espacement du bas */
+    left: 50%; /* Centrer horizontalement */
+    transform: translateX(-50%); /* Ajuster pour centrer */
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+    padding: 5px 10px; /* Espacement du texte */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+/* Exemple de style pour les catégories */
+.category {
+    font-size: 20px;
+    color: lightgray;
+    margin-bottom: 20px; /* Espacement sous la catégorie */
+}
