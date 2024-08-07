@@ -1,0 +1,110 @@
+body {
+    background-color: black;
+    color: aliceblue;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    color: aliceblue;
+}
+
+a {
+    position: relative;
+    color: aliceblue;
+    margin: 20px;
+    text-decoration: none;
+    font-family: fantasy;
+    font-size: 20px;
+    top: 10px;
+}
+
+a:hover {
+    color: blueviolet;
+}
+
+.logo {
+    position: relative;
+    top: 100px;
+    margin-right: 10px;
+    width: 750px;
+    height: auto;
+}
+
+.search {
+    background-color: black;
+    border: 1px solid aliceblue;
+    height: 30px;
+    width: 200px;
+    border-radius: 20px;
+    font-family: fantasy;
+    text-align: center;
+    font-size: 15px;
+    color: aliceblue;
+}
+
+.search:hover {
+    background-color: aliceblue;
+    color: black;
+    border: none;
+}
+
+.search::placeholder {
+    color: aliceblue;
+}
+
+.search:hover::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+h1 {
+    color: aliceblue;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 280px;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 80px; /* Ajuster pour descendre la partie top */
+}
+
+.top-item {
+    border-radius: 50%;
+    text-decoration: none;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 200px; /* Largeur pour centrer deux images */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.top-item::before {
+    content: attr(data-title);
+    position: absolute;
+    bottom: 10px;
+    text-decoration: none;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.top-item-1 {
+    background-image: url('https://yt3.googleusercontent.com/CUblNJBsWF_Xhmn4KFofmkqseBljl7gG-dCKoRbcFHRPvMv1FGaU5ev1iJF2sCDS4h53lqaMuw=s160-c-k-c0x00ffffff-no-rj');
+}
+
+.top-item-2 {
+    background-image: url('https://i.ytimg.com/vi/FOStYsNBsHU/hqdefault.jpg?sqp=-oaymwE9CNACELwBSFryq4qpAy8IARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYciBPKEAwDw==&rs=AOn4CLCmTJPkBwqmR7AxNSHTFpKmCgn3Ow');
+}
